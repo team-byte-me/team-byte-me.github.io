@@ -1,7 +1,7 @@
 ---
 title: "Milestone 2"
-description: "Lorem ipsum dolor sit amet"
-pubDate: "Jul 08 2022"
+description: ""
+pubDate: "Mar 17 2023"
 heroImage: "/placeholder-hero.jpg"
 ---
 
