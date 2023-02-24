@@ -40,7 +40,6 @@ const posts = (await getCollection('milestones')).sort(
 					{
 						posts.map((post) => (
 							<li>
-							{/* <FormattedDate date={post.data.pubDate} /> */}
 								<a href={`/milestones/${post.slug}/`}>{post.data.title}</a>
 							</li>
 						))
