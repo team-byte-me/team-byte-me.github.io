@@ -1,24 +1,74 @@
 ---
-title: "Milestone 2"
+title: "Milestone 2: Definition & Related Work"
 description: ""
 pubDate: "Mar 17 2023"
-heroImage: "/placeholder-hero.jpg"
+heroImage: "/hero.jpg"
 ---
 
 import { YouTube } from 'astro-embed';
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+## Task/Problem Definition
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+### Problem Introduction
+New Grafstate users must overcome a considerable learning curve to be able to use the site effectively. Some of the design choices that contribute to this issue can be identified by applying the golden rules for interface design.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+In Designing the User Interface, Shneiderman points out that “consistent sequences of actions should be required in similar situations'' (Shneiderman 71). The homepage of Grafstate contains icons that are not commonly seen on similar sites across the web. This lack of consistency will make using Grafstate difficult for users who have interacted with similar computer science related tools. Using these uncommon icons creates anti-affordances because new users will not associate them with their respective intended action.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+Shneiderman also advises designers to reduce short term memory load by avoiding “interfaces in which users must remember information from one display and then use that information on another display” (Shneiderman 72). Grafstate’s unintuitive layout violates this principle. In the documentation, the student will learn how to use the site by reading about the functionality that each icon affords. These descriptions are lengthy, however, and it will force the user to remember a lot of information when they try to apply what they learned.
 
-TODO: change to our real video
+A typical interaction may involve a student attempting to run multiple computational structures, such as DFAs. We know that this is a typical interaction because a thorough understanding of DFAs is required to pass the course. This interaction can be summarized by the seven stages of action listed below:
+
+    **Trigger**: During the first week of class, a student is confused by the idea of a DFA.
+
+    **Goal**: The student decides to simulate multiple DFA’s so that they can better understand the material.
+
+    **Execution**:
+        * _Plan_: The student considers their options, which may be difficult to comprehend based on the unusual signifiers on GrafState. After some time searching, the student realizes that they can either type the computational structure directly onto the terminal or navigate the menu to find the template for a DFA.
+        * _Specify_: The student decides to use a pre-made template rather than type it since they are unfamiliar with GrafState’s syntax.
+        * _Perform_: The student navigates through all of the menu options until they locate the DFA template they are looking for.
+
+    **World**: The student uses the DFA template to simulate a DFA.
+
+    **Evaluation**:
+        * _Perceive_: The student feels the frustration of not being able to easily find the DFA template at first, but when they do, they are happy that they have a template and do not have to type in the DFA’s in the terminal themselves.
+        * _Interpret_: The student has successfully simulated a DFA using a template, while also discovering that you can either type DFA’s in the terminal or use a template to generate DFA’s.
+        * _Compare_: The student should be able to easily simulate DFA’s.
+
+### Potential Users
+The user population that is most affected by these issues is students at the University of Georgia taking the Theory of Computation. The difficulty that students face with Grafstate is a problem because it distracts them from learning the main content of the course. Similar tasks to the one outlined above include running multiple computational structures and organizing the output on a single page. This process poses additional challenges, which need to be mitigated so that students can focus on the computational structures themselves. This is a very important course because it contains prerequisite knowledge that students will need to recall in the later stages of their education. Creating a more user-friendly experience will help students learn the course content more efficiently and become better prepared for the following courses.
+
+# Analysis of Existing Solutions
+
+### Existing Solutions
+There are two existing solutions that are related to the problem of study. The first solution involves creating user tours that use clear and concise guidance through text and images to help users learn how to use complex websites like Grafstate. The pros of this solution are that it can be relatively inexpensive to create and distribute, and it can provide users with a step-by-step guide to navigating the website. However, the cons are that it may not be as effective for users who prefer more interactive or hands-on learning experiences, and it may not be able to address all the issues that users may encounter when using Grafstate. According to a study on user yours in the Proceedings of the International AAAI Conference on Weblogs and Social Media, researchers found that “The most common use of comments [they] observed [about user tours] was to provide praise, encouragement, or thanks to the tutorial author” (Lafreniere et al. 307).
+
+The second solution involves Integrated Development Environments (IDEs) with customizable user interfaces that allows for multiple windows to be displayed on the same screen as well as consistent signifiers for the various affordances. According to an article by G2, IDEs with multiple functions like a code editor and separate terminal window allow for debugging while writing code as the user is able to see their output along with the source code to help better understand what their changes are doing. The pros of this solution are that it allows for a more tailored user experience and addresses specific issues that users may have when using a website. However, the cons are that implementing this solution could be time-consuming and expensive, and it may require a significant redesign of the website's user interface.
+
+### Principles and Guidelines
+User tours that use text and images conform to several of Norman's Principles of Good Design. By providing clear and visible instructions and feedback, they make it easier for users to learn how to use complex websites. Additionally, the use of consistent labeling and layouts throughout the tutorial can help users feel more comfortable and confident in their learning experience.
+
+IDEs that split their editor into different windows can conform to several of Norman's principles as well. IDEs also provide clear feedback on syntax errors and use consistent labeling and layouts which can also help users navigate and understand their code more easily. Additionally, the feature allows for Shneiderman’s principle of reducing short term memory load by having simultaneous views of the user’s input and the output from the program.
+
+These solutions can appropriately serve the users of Grafstate by focusing on Norman's Principles of Good Design and following coherent design principles. By making multiple functions and features visible at the same time, providing clear feedback, and using consistent labeling and layouts, these solutions can help users navigate the site more easily and learn more effectively. Additionally, the use of constraints can help prevent mistakes and guide users' behavior, improving their learning experience. Ultimately, by focusing on these principles, solutions can be developed that make Grafstate more user-friendly and accessible to a wider range of users.
+
+# Proposed Solution
+
+### Our Solution
+We propose adding an interactive user tour, replacing the icons with more universally recognizable icons, adding a single word label next to each icon, and redesigning the code editor window to be more similar to IDEs that students interact with regularly (such as Eclipse). This can be accomplished by showing the code editor window and separate results window that can be viewed on the screen simultaneously. The user tour is focused on getting first time users accustomed to the site's main functionality. Properties of the user tour will include a tutorial of how to interact with the interface, how to run multiple computational structures, and how to navigate the documentation. The goal of the tutorial is to give the new user a big picture understanding of the site, demonstrate what the signifiers can afford, and leave them with the ability to run simple simulations immediately after completing the tutorial. This introduction to simple simulations should naturally afford the user to be able to generate more complicated simulations. The new user will be able to access the user tour again at any time, hopefully preventing some trial and error, thus making the new user more comfortable taking new actions. Changing the icons to ones that are more universally recognizable as well as adding a one word label to each icon will help to accurately signify what the icon can afford. If the icon isn’t enough, the extra property of the label will signify what the icon should be able to afford. The introduction of the split editor and results windows will allow for the user to see how their immediate edits/inputs will change and affect their results/output. 
+
+### Measuring Success
+Success can be measured by asking for feedback from current Grafstate users as well as people who have never seen the site. If current Grafstate users report that the new IDE-like user interface is easier to navigate than the current user interface, then we can conclude that this change was a success. If people who have never interacted with the site before are able to simulate two computational structures effectively after going through the user tour, then we can conclude that our solutions are effective. Additionally, another measure of success would be asking new Grafstate users in a survey the amount of time they spent working on a problem or building a diagram using the old interface versus the new one. If there is a significant decrease in time spent on coding a solution, then the new interface successfully alleviates complications with creating in Grafstate. We can integrate a standard measurement of usability, the System Usability Scale (SUS) in the survey, to appropriately gauge the design changes and produce a usability score for the new interface.
+
+## Summary Video
+
 <YouTube id='https://youtu.be/rKtzj_9vl8Q'/>
 
-## Citations
-Lafreniere, B., A. Bunt, M. Lount, and M. Terry. “Understanding the Roles and Uses of Web Tutorials”. _Proceedings of the International AAAI Conference on Web and Social Media_, vol. 7, no. 1, Aug. 2021, pp. 303-10, doi:10.1609/icwsm.v7i1.14413.
+[Link to video](https://youtu.be/rKtzj_9vl8Q)
+
+## References
+* [Design of Everyday Things](https://search.ebscohost.com/login.aspx?direct=true&AuthType=ip,shib&db=nlebk&AN=658202&site=ehost-live&scope=site&custid=uga1)
+
+* [Understanding the Roles and Uses of Web Tutorials](https://ojs.aaai.org/index.php/ICWSM/article/view/14413/14262)
+
+* [What is a Text Editor?](https://www.g2.com/articles/text-editor)

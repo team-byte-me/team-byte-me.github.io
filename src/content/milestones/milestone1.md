@@ -2,7 +2,7 @@
 title: "Milestone 1: Problem Proposal"
 description: "Our term project's problem proposal."
 pubDate: "Feb 10 2023"
-heroImage: "/hero.jpg"
+heroImage: "/milestone1-hero.jpg"
 ---
 <!-- A spiced up markdown version of our original Piazza post submission -->
 ## Introduction
