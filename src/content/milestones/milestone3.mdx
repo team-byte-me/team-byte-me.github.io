@@ -1,0 +1,218 @@
+---
+title: "Milestone 3: Design Alternatives"
+description: ""
+pubDate: "Apr 14 2023"
+heroImage: "/milestone3-hero.jpg"
+---
+
+import { YouTube } from "astro-embed";
+
+## A. User Experience Requirements
+
+### i. Inital User Story Ideas
+
+**Task: Learn what all the icons above the terminal mean**
+
+- As a first time user, I want to understand what each button on the site means so that I can use the tool effectively.
+
+**Task: Simulate an DFA and study the results**
+
+- As a user, I want to insert the code for an DFA onto the terminal so that I can simulate a DFA.
+- As a user, I want to run the code in the terminal so that the result of the simulation is presented on the screen.
+- As a user, I want to arrange my terminal and results windows to my preferred layout so that I can customize my experience to match my preferred workflow.
+- As a user, I want to run my Grafstate code and see my results simultaneously so that I can understand what my code is doing.
+
+**Task: Find the documentation for DFA’s**
+
+- As a user, I want to locate the documentation for NFA’s so that I can learn how to simulate the structure properly.
+- As a user, I want to be able to navigate the documentation quickly so that I do not lose my train of thought when building a computational structure.
+- As a user, I want the documentation to be logically organized so that I can quickly locate the specific pieces of information I need.
+
+**Task View the documentation again after running a simulation**
+
+- As a user, I want to view the documentation again after running a simulation so that I can learn more about the computational structure I am simulating.
+- As a user, I want to be able to view the documentation while looking at the computational structure I simulated so that I can gain a better understanding of the structure.
+
+**Task: Understand GrafState’s workflow**
+
+- As a user, I want to be walked through examples of how to use the site so that I have an idea of how to be productive in the application.
+
+### ii. Most Relevant User Stories
+
+#### User Story - Signifier Overhaul
+
+> As a first time user, I want to understand the affordances of each button on the page so that I can use the tool as intended.
+
+In The Design of Everyday Things, Norman suggests that a design should “make things visible, including the conceptual model of the system, the alternative actions, and the results of actions” (Norman 188). This user story is important to include because the buttons on the site play a key role in the users’ formation of a conceptual model. Norman also emphasizes that “as much as possible, it should operate without instructions or labels” (Norman 188). As a result, we should ensure that buttons are made in a way that does not immediately send the user to the documentation in order to find an explanation.
+
+#### User Story - Split Windows
+
+> As a user, I want to arrange my terminal and results windows to my preferred layout so that I can customize my experience to match my preferred workflow.
+
+This is a relevant user story because it provides the user with as much flexibility as possible while still defining a page structure. In Designing the User Interface, Shneiderman includes keeping users in control as part of the Eight Golden Rules of Interface Design, and explains that “experienced users strongly desire the sense that they are in charge of the interface and that the interface responds to their actions” (Shneiderman 72). Since the terminal and results pages are where users will simulate computational structures, enabling them to restructure the layout of these pages keeps them in control of the main interaction points in the interface.
+
+#### User Story - User Tour
+
+> As a user, I want to be walked through examples of how to use the site so that I have an idea of how to be productive in the application.
+
+This user story is important because it will encompass the main use case of the site. Since it is a tool for visualizing math, GrafState’s main feature is enabling users to code and run simulations. In Understanding the Roles and Uses of Web Tutorials, the authors studied users’ comments on why they use website tutorials, and concluded that “tutorials provide in-task help for users in the midst of performing a task that they don’t know how to complete” (306). In case a user cannot figure out how to use the main task performed on GrafState, providing a tutorial can help them to learn how to do so.
+
+## B. Ideation and Prelininary Designs
+
+### User Story 1 - Signifier Overhaul
+
+> As a first time user, I want to understand the affordances of each button on the page so that I can use the tool as intended.
+
+![User Story 1 Design Ideas](/story1.jpg)
+
+### Top Ideas for Signifier Overhaul
+
+### Idea 1
+
+**Description**
+
+- Use the same types of buttons that popular IDE’s like VSCode use for similar functionality.
+
+**Justification**
+
+- In prerequisite courses for the Theory of Computation, students will use IDEs like Eclipse and VSCode. Therefore, they will be more likely to recognize the signifiers on the page if they resemble what they have already been exposed to. Below are two examples of buttons on GrafState which do not resemble similar buttons that students have already seen.
+- Below on the left is a run button from Eclipse IDE, a popular tool for programming in Java. On the right is GrafState’s current run button.
+  ![Run Buttons](/run-buttons.jpg)
+- Below on the far left is Grafstate’s back button, and the other buttons are commonly found on websites.
+  ![Arrow Buttons](/arrows.jpg)
+
+### Idea 2
+
+**Description**
+
+- Add text labels for each button.
+
+**Justification**
+
+- In prerequisite courses for the Theory of Computation, students will use IDEs like Eclipse and VSCode. Therefore, they will be more likely to recognize the signifiers on the page if they resemble what they have already been exposed to. Below are two examples of buttons on GrafState which do not resemble similar buttons that students have already seen.
+
+### Idea 3
+
+**Description**
+
+- Add responsive, on-hover labels to all the UI buttons.
+
+**Justification**
+
+- We chose this idea because we are unsure whether text labels will look too bulky, or take up too much space. Responsiveness is the key here. In Designing the User Interface, Shneiderman explains that “for every user action, there should be an interface feedback” (Shneiderman 71). Adding on-hover labels will provide feedback to the user as they search for a specific button.
+
+[Figma Link](https://www.figma.com/file/wVAW00nihG0azNnMJM9yAV/Low-Fidelity---User-Story-1?t=dyjhCPgSTSbHueP7-1)
+
+![](/low1.jpg)
+
+### User Story 2 - Split Windows
+
+> As a user, I want to arrange my terminal and results windows to my preferred layout so that I can customize my experience to match my preferred workflow.
+
+![User Story 2 Design Ideas](/story2.jpg)
+
+### Top Ideas for Split Windows
+
+### Idea 1
+
+**Description**
+
+- On the initial screen, the documentation is fixed on the left size and resizable horizontally, and the terminal window is on the right side of the screen and has one tab initially. The terminal will take up slightly more space than the documentation. The user can toggle the documentation to remove it from the screen, and the terminal shifts to the left side of the screen if they do so. Right after running, the terminal window is moved to the left side and a results window appears on the right side. In each window, we will use a floating tab design, and we will add the zoom button in the top right corner of the window. In the header, we will move the toggle to the left side, add a run button in the middle, and add an insert terminal button if the user exits out of all terminals. The terminal and results windows can be moved and resized anywhere on the body of the page, similar to most IDE’s.
+
+**Justification**
+
+- We included this idea because it gives the user full control over the positioning of the terminal and results windows. Our problem of study is centered around running multiple simulations, so adding the multiple tab option will let users seamlessly navigate from one computational structure to another.
+- An issue we must address is finding the corresponding results tab to the currently open terminal. To solve this problem, we will use different shades of colors for the opened tabs, and we will use the color blindness simulation tool that was introduced in class to ensure that all users will be able to notice the difference in color.
+
+### Idea 2
+
+**Description**
+
+- Split the screen in half, the left side contains the terminal which does not go away after running, and the right side initially contains the documentation, but shows only the results when a simulation has been run. The documentation can then be moved around anywhere on the screen.
+
+**Justification**
+
+- We included this idea because the documentation contains information that some users may need to see while they are writing code in the terminal. Allowing users to move the documentation anywhere on the screen will make it easier for them to view both windows at the same time, since they will have control over the layout of each window.
+
+---
+
+### User Story 3 - User Tour
+
+> As a user, I want to be walked through examples of how to use the site so that I can understand what each button does and have an idea of how to be productive in the application.
+
+![User Story 3 Design Ideas](/story3.jpg)
+
+### Top Ideas for User Tour
+
+### Idea 1
+
+**Description**
+
+- A modal will pop up to ask the user if they want to go through a tutorial of the site. In the tutorial, little modals will prompt the user on each action needed to code and display a computational structure.
+
+**Justification**
+
+- An issue we must address is finding the corresponding results tab to the currently open terminal. To solve this problem, we will use different shades of colors for the opened tabs, and we will use the color blindness simulation tool that was introduced in class to ensure that all users will be able to notice the difference in color.
+
+### Idea 2
+
+**Description**
+
+- Add a section in the documentation that explains how to do many things on the site, such as coding and displaying a computational structure.
+
+**Justification**
+
+- We chose this idea instead of creating a video walkthrough because our new layout will enable users to keep the documentation open while completing the entire tutorial with the users preferred layout. Reducing short term memory load is one of the eight golden rules of interface design, and it states that designers should avoid “interfaces in which users must remember information from one display and then use that information on another display” (Shneiderman 71). Compared to the idea of making a video, this reduces the short term memory load because users with smaller screen sizes will not have to switch back and forth from the video to Grafstate. Instead, they can view all the steps while completing the process.
+
+## C. Detailed Designs
+
+**Note**: As you may notice, there is not a significant difference between some of our wireframes and their detailed designs. When creating our wireframes, we decided to make custom components for each part of the website. We reasoned that this would save us time when creating the detailed designs, because we could make variants of the already existing components. However, as we started developing our custom components and wireframes, we found ourselves paying more attention to the details than what is necessary for a low fidelity wireframe.
+In the future, we will take Dr. Cotterell’s advice and focus on the specific section of the site that we are modifying, rather than trying to recreate the entire page exactly. Learning this lesson the hard way now will be beneficial to all members of our group when we undergo similar design processes throughout the course of our careers.
+
+### User Story 1 - Signifier Overhaul
+
+#### Why this is our best design
+
+- For this solution, we wanted the icons and buttons to be clear for users and new users. We decided to add text labels to each icon, helping the user better identify what each signifier can afford. Idea 1 from User Story 1 uses text labels that are integrated in the interface explicitly. This is the best design choice for this user story over on-hover labels and using popular icons because it reduces learning time for users trying to understand what certain icons mean. A study performed by Susan Wiedenbeck evaluated website usability as well as the users’ attitude towards the application by comparing label-only and icon-label signifiers to an icon-only interface: “The differences in time and help references were especially strong in initial learning, indicating that these are the areas in which the most is to be gained by learners who use interfaces with text labels or with labeled icons” (Susan Wiedenbeck 79). Adding text labels to each icon suggests that (new) users will be able to learn the interface faster: “The lack of difference between the label-only and icon-label groups in most comparisons suggests that the labels were the element that aided learning” (Susan Wiedenbeck 79).
+
+#### Justifications for new design decisions
+
+- For our high-fidelity mockup we decided to remove the “Insert” text label from the header and make the”Insert” function an icon-label button that is next to the other icon-labels such as the “Run” and “Exit Terminal” button. The insert function is frequently used and vital part of the Grafstate experience, so it is important that this function is grouped with its equally as important functions: “Adding features for novices, such as explanations, and features for experts, such as shortcuts and faster pacing, enriches the interface design and improves perceived quality” (Shneiderman 90).
+
+### User Story 2 - Split Windows
+
+#### Why this is our best design
+
+- As a tool for visualizing mathematics, Grafstate’s key feature is coding and running simulations of computational structures. As a result, the user will interact with the terminal and results frequently, since both are used to run simulations. Giving the user full freedom over the layout of these two windows as opposed to the documentation follows the seventh golden rule of interface design, which states that you should “keep users in control,” since “experienced users strongly desire the sense that they are in charge of the interface” (Shneiderman 71).
+- Users may also want to run multiple simulations and compare the results. Allowing multiple terminal and results tabs will enable them to do so without losing their code.
+
+#### Justifications for new design decisions
+
+- To identify the corresponding results to the open terminal, we changed the color of the open tabs to white. We chose this color because after trying different colors and observing the display on Coblis Color Blindness Simulator, the differences were the most distinct.
+- In the third user story, we grayed out the parts of the site that we did not want the user to focus on during the user tour. We used that idea in this user story as well to further emphasize the opened results tab.
+- Below is what our design looks like for a person with Monochromacy/Achromatopsia, one of the more severe forms of color blindness. The distinction between the color and shade of the open and closed results can still be made.
+
+![Monochromacy/Achromatopsia picture](/color-blind.jpg)
+
+- On the initial page, we also modified the color of the terminal tab to maintain color consistency. Like in user story one, we also changed the color of the run button to green.
+
+### User Story 3 - User Tour
+
+#### Why this is our best design
+
+- We decided to go with this design as we wanted users to be able to quickly become acquainted with the new layout whether they are returning users or brand new. We felt the quickest way to introduce how the UX for creating computational structures works was to introduce a simple and optional step through of how to do so. We found that such a solution is a the most ideal way to expand a user’s repertoire of skills (Lafreniere et al. 2013)
+- Another reason we went with this design was we wanted a coherent user experience that fit with the rest of the design language of the new layout. We felt following the golden rule of striving for consistency allows for similar signifiers to be present throughout the design leading to a better overall user experience (Shneiderman et al. 2017).
+
+#### Justifications for new design decisions
+
+- From our low fidelity wireframe to this higher fidelity iteration, there were several design decisions made to enhance the overall user experience. Firstly, we added an option for the user to ensure they are never prompted for the user on login again. This was important to add in addition to the always present close buttons on the modals. Both of these buttons give users a sense of control as they are able to exit the user tour at any time (Shneiderman et al. 2017).
+- An additional refinement was the removal of the “Next” button on some of the modals as many of them prompt the user to interact with a particular signifier on the website. This design decision was made as it increases the interactivity of the user tour as opposed to simply reading the modal prompts and having to remember. This interactive learning approach is known to be an enhanced way of learning something new (Reuell 2019).
+- We changed the modals for inserting premade code and premade computational structures into the terminal to better match our UI overhaul. This was done to adhere to the golden rule of striving for consistency and ensuring a consistent experience throughout Grafstate (Shneiderman et al. 2017).
+
+## D. Summary Video
+
+<YouTube id="https://www.youtube.com/watch?v=6LiFxI6pQQo" />
+
+[Link to video]()
+
+## References

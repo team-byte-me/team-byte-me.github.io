@@ -1,19 +1,21 @@
 {
-	"name": "proud-phase",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev --host",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro"
-	},
-	"dependencies": {
-		"@astrojs/mdx": "^0.17.0",
-		"@astrojs/rss": "^2.1.1",
-		"@astrojs/sitemap": "^1.0.1",
-		"astro": "^2.0.14",
-		"astro-embed": "^0.2.1"
-	}
+  "name": "proud-phase",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.17.0",
+    "@astrojs/rss": "^2.1.1",
+    "@astrojs/sitemap": "^1.0.1",
+    "@mdx-js/mdx": "^2.3.0",
+    "@mdx-js/react": "^1.6.16",
+    "astro": "^2.0.14",
+    "astro-embed": "^0.2.1"
+  }
 }
