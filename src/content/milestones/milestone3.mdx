@@ -13,7 +13,8 @@ import { YouTube } from "astro-embed";
 
 **Task: Learn what all the icons above the terminal mean**
 
-- As a first time user, I want to understand what each button on the site means so that I can use the tool effectively.
+- As a first time user, I want to understand the affordances of each button on the page so that I can use the tool as intended.
+
 
 **Task: Simulate an DFA and study the results**
 
@@ -35,7 +36,7 @@ import { YouTube } from "astro-embed";
 
 **Task: Understand GrafState’s workflow**
 
-- As a user, I want to be walked through examples of how to use the site so that I have an idea of how to be productive in the application.
+- As a user, I want to be walked through examples of how to use the site so that I can understand how to be productive in the application.
 
 ### ii. Most Relevant User Stories
 
@@ -53,9 +54,9 @@ This is a relevant user story because it provides the user with as much flexibil
 
 #### User Story - User Tour
 
-> As a user, I want to be walked through examples of how to use the site so that I have an idea of how to be productive in the application.
+> As a user, I want to be walked through examples of how to use the site so that I can understand how to be productive in the application.
 
-This user story is important because it will encompass the main use case of the site. Since it is a tool for visualizing math, GrafState’s main feature is enabling users to code and run simulations. In Understanding the Roles and Uses of Web Tutorials, the authors studied users’ comments on why they use website tutorials, and concluded that “tutorials provide in-task help for users in the midst of performing a task that they don’t know how to complete” (306). In case a user cannot figure out how to use the main task performed on GrafState, providing a tutorial can help them to learn how to do so.
+This user story is important because it will encompass the main use case of the site. Since it is a tool for visualizing math, GrafState’s main feature is enabling users to code and run simulations. In Understanding the Roles and Uses of Web Tutorials, the authors studied users’ comments on why they use website tutorials, and concluded that “tutorials provide in-task help for users in the midst of performing a task that they don’t know how to complete” (306). If a user is struggling to complete the task of simulating a computational structure, providing a tutorial can help them to learn how to do so.
 
 ## B. Ideation and Prelininary Designs
 
@@ -76,9 +77,9 @@ This user story is important because it will encompass the main use case of the 
 **Justification**
 
 - In prerequisite courses for the Theory of Computation, students will use IDEs like Eclipse and VSCode. Therefore, they will be more likely to recognize the signifiers on the page if they resemble what they have already been exposed to. Below are two examples of buttons on GrafState which do not resemble similar buttons that students have already seen.
-- Below on the left is a run button from Eclipse IDE, a popular tool for programming in Java. On the right is GrafState’s current run button.
+- On the right is a run button from Eclipse IDE, a popular tool for programming in Java. On the left is GrafState’s current run button.
   ![Run Buttons](/run-buttons.jpg)
-- Below on the far left is Grafstate’s back button, and the other buttons are commonly found on websites.
+- Below on the far left is Grafstate’s back button, and we found the other buttons frequently on similar websites.
   ![Arrow Buttons](/arrows.jpg)
 
 ### Idea 2
@@ -89,7 +90,7 @@ This user story is important because it will encompass the main use case of the 
 
 **Justification**
 
-- In prerequisite courses for the Theory of Computation, students will use IDEs like Eclipse and VSCode. Therefore, they will be more likely to recognize the signifiers on the page if they resemble what they have already been exposed to. Below are two examples of buttons on GrafState which do not resemble similar buttons that students have already seen.
+- Adjusting the presentation of the buttons may not be enough to convey its functionality, because Grafstate offers unique features such as inserting prewritten code onto the terminal. Adding small text labels on some of the buttons may help users understand its functionality. 
 
 ### Idea 3
 
@@ -117,7 +118,7 @@ This user story is important because it will encompass the main use case of the 
 
 **Description**
 
-- On the initial screen, the documentation is fixed on the left size and resizable horizontally, and the terminal window is on the right side of the screen and has one tab initially. The terminal will take up slightly more space than the documentation. The user can toggle the documentation to remove it from the screen, and the terminal shifts to the left side of the screen if they do so. Right after running, the terminal window is moved to the left side and a results window appears on the right side. In each window, we will use a floating tab design, and we will add the zoom button in the top right corner of the window. In the header, we will move the toggle to the left side, add a run button in the middle, and add an insert terminal button if the user exits out of all terminals. The terminal and results windows can be moved and resized anywhere on the body of the page, similar to most IDE’s.
+- On the initial screen, the documentation is fixed on the left size and resizable horizontally, and the terminal window is on the right side of the screen and has one tab. The terminal will take up slightly more space than the documentation. The user can toggle the documentation to remove it from the screen, and the terminal shifts to the left side of the screen if they do so. Right after running, the terminal window is moved to the left side and a results window appears on the right side. In each window, we will use a floating tab design, and we will add the zoom button in the top right corner of the window. In the header, we will move the toggle to the left side, add a run button in the middle, and add an insert terminal button if the user exits out of all terminals. The terminal and results windows can be moved and resized anywhere on the body of the page, similar to most IDE’s.
 
 **Justification**
 
@@ -140,7 +141,7 @@ This user story is important because it will encompass the main use case of the 
 
 ### User Story 3 - User Tour
 
-> As a user, I want to be walked through examples of how to use the site so that I can understand what each button does and have an idea of how to be productive in the application.
+> As a user, I want to be walked through examples of how to use the site so that I can understand how to be productive in the application.
 
 ![User Story 3 Design Ideas](/story3.jpg)
 
@@ -154,7 +155,7 @@ This user story is important because it will encompass the main use case of the 
 
 **Justification**
 
-- An issue we must address is finding the corresponding results tab to the currently open terminal. To solve this problem, we will use different shades of colors for the opened tabs, and we will use the color blindness simulation tool that was introduced in class to ensure that all users will be able to notice the difference in color.
+- This idea combines a few that we came up with during the brainstorming session. Compared to merely adding a section to the documentation explaining the site or making a video walkthrough, this idea will engage the user more by prompting them to go through the steps of running the simulation themselves.
 
 ### Idea 2
 
@@ -173,19 +174,19 @@ This user story is important because it will encompass the main use case of the 
 ## C. Detailed Designs
 
 **Note**: As you may notice, there is not a significant difference between some of our wireframes and their detailed designs. When creating our wireframes, we decided to make custom components for each part of the website. We reasoned that this would save us time when creating the detailed designs, because we could make variants of the already existing components. However, as we started developing our custom components and wireframes, we found ourselves paying more attention to the details than what is necessary for a low fidelity wireframe.
-In the future, we will take Dr. Cotterell’s advice and focus on the specific section of the site that we are modifying, rather than trying to recreate the entire page exactly. Learning this lesson the hard way now will be beneficial to all members of our group when we undergo similar design processes throughout the course of our careers.
+In the future, we will take Dr. Cotterell’s advice and focus on the specific section of the site that we are modifying, rather than trying to accurately replicate the entire page. Learning this lesson the hard way now will be beneficial to all members of our group when we undergo similar design processes throughout the course of our careers.
 
 ### User Story 1 - Signifier Overhaul
 
 #### Why this is our best design
 
-- For this solution, we wanted the icons and buttons to be clear for users and new users. We decided to add text labels to each icon, helping the user better identify what each signifier can afford. Idea 1 from User Story 1 uses text labels that are integrated in the interface explicitly. This is the best design choice for this user story over on-hover labels and using popular icons because it reduces learning time for users trying to understand what certain icons mean. A study performed by Susan Wiedenbeck evaluated website usability as well as the users’ attitude towards the application by comparing label-only and icon-label signifiers to an icon-only interface: “The differences in time and help references were especially strong in initial learning, indicating that these are the areas in which the most is to be gained by learners who use interfaces with text labels or with labeled icons” (Susan Wiedenbeck 79). Adding text labels to each icon suggests that (new) users will be able to learn the interface faster: “The lack of difference between the label-only and icon-label groups in most comparisons suggests that the labels were the element that aided learning” (Susan Wiedenbeck 79).
+- For this solution, we wanted the icons and buttons to be clear for users and new users. We decided to add text labels to each icon to help the user understand the affordances of each signifier. Idea 1 from User Story 1 uses text labels that are integrated in the interface explicitly. This is the best design choice for this user story over on-hover labels and using popular icons because it reduces learning time for users trying to understand what certain icons mean. A study performed by Susan Wiedenbeck evaluated website usability as well as the users’ attitude towards the application by comparing label-only and icon-label signifiers to an icon-only interface: “The differences in time and help references were especially strong in initial learning, indicating that these are the areas in which the most is to be gained by learners who use interfaces with text labels or with labeled icons” (Susan Wiedenbeck 79). Adding text labels to each icon suggests that (new) users will be able to learn the interface faster: “The lack of difference between the label-only and icon-label groups in most comparisons suggests that the labels were the element that aided learning” (Susan Wiedenbeck 79).
 
 #### Justifications for new design decisions
 
 - For our high-fidelity mockup we decided to remove the “Insert” text label from the header and make the”Insert” function an icon-label button that is next to the other icon-labels such as the “Run” and “Exit Terminal” button. The insert function is frequently used and vital part of the Grafstate experience, so it is important that this function is grouped with its equally as important functions: “Adding features for novices, such as explanations, and features for experts, such as shortcuts and faster pacing, enriches the interface design and improves perceived quality” (Shneiderman 90).
 
-- Introducing color to the user interface is practically supported in design research and helps facilitate our goal of making a visually appealing and helpful interface. An experiment evaluating color on human affective cognition in dynamic web pages concluded that “the results obtained in the field of color design considerably differ from the results of this study, which indicate that dark royal blue (#4169e1) and dark cyan ( #006400), which are cold colors, are the most suitable colors for web page design” (Lungwen, et al). Due to these findings we used royal blue for the zoom, insert, logout, and exit buttons and dark cyan for the run icon is an aesthetic decision for Grafstate. A research article published by Lisa Wilms and Daniel Oberfeld confirms “that color has systematic effects on the emotional state of a person viewing the color.” Consistently using desaturated colors, especially the gray tones present in the old interface, make the buttons visually uninteresting and harder to look for in a monochromatic color scheme. The choice to switch to the blue colors help information and important icons jump out at the user, making it easier for a user to intuitively know what to do. The cold colors, such as the royal blue, had consistently the most positive results from the study and were deemed as most suitable for the tourism website used in the study. Although the study comes with limitations, “...the experimental results provide a theoretical and practical reference for the selection of appropriate colors and design styles for tourism websites and web pages of other product types.” 
+- Introducing color to the user interface is practically supported in design research and helps facilitate our goal of making a visually appealing and helpful interface. An experiment evaluating color on human affective cognition in dynamic web pages concluded that “the results obtained in the field of color design considerably differ from the results of this study, which indicate that dark royal blue (#4169e1) and dark cyan ( #006400), which are cold colors, are the most suitable colors for web page design” (Lungwen, et al). Due to these findings we used royal blue for the zoom, insert, logout, and exit buttons and dark cyan for the run icon is an aesthetic decision for Grafstate. A research article published by Lisa Wilms and Daniel Oberfeld confirms “that color has systematic effects on the emotional state of a person viewing the color.” Consistently using desaturated colors, especially the gray tones present in the old interface, make the buttons visually uninteresting and harder to look for in a monochromatic color scheme. The choice to switch to the blue colors help information and important icons jump out at the user, making it easier for a user to intuitively know what to do. The cold colors, such as the royal blue, consistently had the most positive results from the study and were deemed as most suitable for the tourism website used in the study. Although the study comes with limitations, “...the experimental results provide a theoretical and practical reference for the selection of appropriate colors and design styles for tourism websites and web pages of other product types.” 
 
 - Additionally, the decision to round the icon’s borders and keep the background in grayscale increases visibility and reduces search time. Contrast can play a role in affecting emotion, and a one study concludes that “the enhancement of contrast induces the increase of valence, while the reduction of contrast induces the decrease,” which suggests higher contrast design in websites will have positive effects on user experience (Yang, et al). Therefore, we chose grayscale for the interface background in order to keep contrast between backgrounds, buttons, and text high. This decision is supported by another study that says “interface background color plays an important role in visual search, and high color differentiation can improve icon recognition performance” (Deng et al pg 3). This study looks into how the user visual experience and search time is affected by an icon shape and background color choice, and it concludes that RS (rounded shape) icons paired with LS (low saturation) backgrounds “…may produce the best user visual experience and the most efficient search effectiveness” based on its findings (Deng, et al pg 11). 
 
@@ -208,8 +209,6 @@ In the future, we will take Dr. Cotterell’s advice and focus on the specific s
 
 ![Monochromacy/Achromatopsia picture](/color-blind.jpg)
 
-- On the initial page, we also modified the color of the terminal tab to maintain color consistency. Like in user story one, we also changed the color of the run button to green.
-
 **[Figma Link](https://www.figma.com/file/izF1pLqMP5d736LssGFaxE/High-Fidelity---User-Story-2?t=k07fFvYGopA2L3aN-0)**
 
 ![](/high2.png)
@@ -218,8 +217,8 @@ In the future, we will take Dr. Cotterell’s advice and focus on the specific s
 
 #### Why this is our best design
 
-- We decided to go with this design as we wanted users to be able to quickly become acquainted with the new layout whether they are returning users or brand new. We felt the quickest way to introduce how the UX for creating computational structures works was to introduce a simple and optional step through of how to do so. We found that such a solution is a the most ideal way to expand a user’s repertoire of skills (Lafreniere et al. 2013)
-- Another reason we went with this design was we wanted a coherent user experience that fit with the rest of the design language of the new layout. We felt following the golden rule of striving for consistency allows for similar signifiers to be present throughout the design leading to a better overall user experience (Shneiderman et al. 2017).
+- We decided to go with this design as we wanted users to be able to quickly become acquainted with the new layout whether they are first time or returning users. We felt the quickest way to introduce how the UX for creating computational structures works is to introduce a simple and optional step that demonstrates how to do so. We found that such a solution is a the most ideal way to expand a user’s repertoire of skills (Lafreniere et al. 2013).
+- Another reason we went with this design was we wanted a coherent user experience that fit with the rest of the design language of the new layout. Following the golden rule of striving for consistency allows for similar signifiers to be present throughout the design leading to a better overall user experience (Shneiderman et al. 2017).
 
 #### Justifications for new design decisions
 
