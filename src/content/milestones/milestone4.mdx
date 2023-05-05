@@ -1,0 +1,108 @@
+---
+title: "Milestone 4: Prototyping & Testing"
+description: ""
+pubDate: "Apr 14 2023"
+heroImage: "/milestone4-img.png"
+---
+
+import { YouTube } from "astro-embed";
+
+## A. High-Fidelity Prototype
+
+### 1. Our Prototype:
+
+**[Figma Link](https://www.figma.com/file/9QeafCpZkYSI9pQ73JzRPT/Milestone-4?node-id=4-1794&t=shGZfHoQbPAIgGJl-0)**
+
+### 2. User Stories
+
+#### User Story - Signifier Overhaul
+
+> As a first time user, I want to understand the affordances of each button on the page so that I can use the tool as intended.
+
+In The Design of Everyday Things, Norman suggests that a design should “make things visible, including the conceptual model of the system, the alternative actions, and the results of actions” (Norman 188). This user story is important to include because the buttons on the site play a key role in the users’ formation of a conceptual model. Norman also emphasizes that “as much as possible, it should operate without instructions or labels” (Norman 188). As a result, we should ensure that buttons are made in a way that does not immediately send the user to the documentation in order to find an explanation.
+
+#### User Story - Split Windows
+
+> As a user, I want to arrange my terminal and results windows to my preferred layout so that I can customize my experience to match my preferred workflow.
+
+This is a relevant user story because it provides the user with as much flexibility as possible while still defining a page structure. In Designing the User Interface, Shneiderman includes keeping users in control as part of the Eight Golden Rules of Interface Design, and explains that “experienced users strongly desire the sense that they are in charge of the interface and that the interface responds to their actions” (Shneiderman 72). Since the terminal and results pages are where users will simulate computational structures, enabling them to restructure the layout of these pages keeps them in control of the main interaction points in the interface.
+
+#### User Story - User Tour
+
+**[Figma Link](https://www.figma.com/proto/9QeafCpZkYSI9pQ73JzRPT/Milestone-4?node-id=14-4543&scaling=scale-down&page-id=4%3A1794&starting-point-node-id=14%3A4543&show-proto-sidebar=1)**
+
+> As a user, I want to be walked through examples of how to use the site so that I can understand how to be productive in the application.
+
+This user story is important because it will encompass the main use case of the site. Since it is a tool for visualizing math, GrafState’s main feature is enabling users to code and run simulations. In Understanding the Roles and Uses of Web Tutorials, the authors studied users’ comments on why they use website tutorials, and concluded that “tutorials provide in-task help for users in the midst of performing a task that they don’t know how to complete” (306). If a user is struggling to complete the task of simulating a computational structure, providing a tutorial can help them to learn how to do so.
+
+
+## B. Testing Protocol
+
+### 1. Protocol Description:
+
+**Research Question**: Does the user tour along with the updated signifiers enable new users to understand how the site works more effectively, and does the new window-like layout give experienced users more control over the interface?
+
+**Objectives, Methodology, and Organization:**: 
+- We will use a mixed methodology involving surveys, observations, and interviews. Since our participants will have different levels of experience, it is necessary to adjust our approach to study each group effectively. The two major groups of participants include students who are already familiar with Grafstate, and students who have completed two computer science courses that include a programming component but have not yet taken a course that uses Grafstate. Changing the appearance of an interface has different effects on experienced users as compared to new users. Therefore, we will use the methodology that is best suited for each group. 
+- The students who have not used Grafstate will be split into two groups: one group will test the current interface, while the other will test our prototype. We will ask the participants to perform some basic tasks on the site that involve interacting with its most critical features. After observing how the user interacts with the site, we will ask them about their overall experience in an interview to verify that what we were observing is an accurate interpretation.
+- Directly observing experienced users is not necessary because their experience with the interface will be more subjective, and therefore difficult to interpret through observation. They have used the current version of Grafstate extensively, and our goal is to provide them with more control over the interface. We can send them the prototype, have them perform some basic tasks, and report their impressions in a survey. We can then analyze the surveys to determine whether the new layout was successful in keeping the user in control of the user interface more effectively than the current version of Grafstate.
+
+
+### 1. Procedure Description:
+
+#### Informed Consent:
+- Before testing our prototype, we will ensure that we obtain informed consent from all of our participants by considering the recommendations from the Belmont Report. In the report, it is stated that the “consent process can be analyzed as containing three elements: information, comprehension and voluntariness.” When informing each participant of the observational study, we will tell them exactly what data the observer is collecting, the reason for the study, and emphasize that they can withdraw from the study at any time. Since knowledge of these factors are not likely to impair the results of the study, each step of the procedure outlined below will be presented to the participant.
+- To ensure that the participant has comprehended the information, we will pre-record a video that outlines all pertinent information for each group of participants. Experienced Grafstate users, who will not be directly observed during the study, will be given our contact information so that we can answer any additional questions they may have. New Grafstate users will also view a video before the observational study begins, the person conducting the interview will answer any questions before the study begins.
+
+#### The Procedure:
+
+##### New Users:
+- Participants who have not used Grafstate before will be asked to run two simulations of a commonly used computational structure, called a DFA. The group that has been assigned to use our prototype will be asked to complete the user tour in its entirety, while the other group will interact directly with the current version of Grafstate. Both groups will be asked to try to figure out how to run a simulation quickly, but at a pace at which they will be able to remember the steps.
+- As the participants navigate the site, the observer will measure the total amount of time it takes for them to complete the task, as well as the number of times that the user seems disoriented or confused by the interface. Following the observational study, the interviewer will ask the participant to rate how confident they are in their ability to remember how to perform the task again with one of the following options: Very confident, somewhat confident, slightly unconfident, very unconfident. The interviewer will also ask the participant to rate their overall experience with the site with one of the following options: Excellent, good, average, needs improvement, terrible. The interview can use an industry standard scale for gauging usability, the System Usability Scale, which works with small sample sizes. Incorporating this scale into our survey for how users feel about the new interface of GrafState will allow us to have feedback for the most critical aspects of the design changes because a metric will be produced for questions such as “​​I needed to learn a lot of things before I could get going with this system,” “I felt very confident using the system,” and “I found the system very cumbersome to use.”
+- We will organize the data collected above in excel. We will calculate the average number of instances of confusion for both groups, as well as the average amount of time that it takes for the user to complete the task. The ratings will be compared between the two groups on bar graphs. One graph will display the confidence related to performing the tasks again, while the other will compare the overall experience.
+
+##### Experienced Users:
+- Participants who are familiar with Grafstate will be asked to run two DFA’s, and resize the windows to match their preferred workflows. In the survey, we will ask them to answer the following questions:
+- The prototype gives you more control over the interface.
+- It was easy to learn how to use the prototype. 
+- The prototype is an improvement on the current version of Grafstate.  
+- The answer choices will be: Strongly agree, somewhat agree, neutral, somewhat disagree, strongly disagree.
+
+## D. Summary Video
+
+
+<YouTube id="https://www.youtube.com/watch?v=HRPa7JF7Ndc" />
+
+
+[Link to video](https://www.youtube.com/watch?v=HRPa7JF7Ndc)
+
+
+## References
+* [Design of Everyday Things](https://search.ebscohost.com/login.aspx?direct=true&AuthType=ip,shib&db=nlebk&AN=658202&site=ehost-live&scope=site&custid=uga1)
+
+
+* [Coblis - Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/)
+
+
+* [Understanding the Roles and Uses of Web Tutorials](https://ojs.aaai.org/index.php/ICWSM/article/view/14413/14262)
+
+
+* [Application of visual colors in dynamic web page design through affective cognition.](https://doi.org/10.1007/s11042-021-11732-z)
+
+
+* [The use of icons and labels in an end user application program: an empirical study of learning and retention.](https://www.tandfonline.com/doi/abs/10.1080/014492999119129)
+
+
+* [Modeling Fonts in Context: Font Prediction on Web Designs.](https://doi.org/10.1111/cgf.13576)
+
+
+* [Effects of App Icon Border Form and Interface Background Color Saturation on User Visual Experience and Search Performance.](https://doi.org/10.1155/2022/1166656)
+
+
+* [How color can affect emotion](https://pubmed.ncbi.nlm.nih.gov/28612080/)
+
+
+* [The performance of the K6 and K10 screening scales for psychological distress in the Australian National Survey of Mental Health and Well-Being.](https://pubmed.ncbi.nlm.nih.gov/32823741/)
+
+
+* [Study shows students learn more when taking part in classroom activities.](https://news.harvard.edu/gazette/story/2019/09/study-shows-that-students-learn-more-when-taking-part-in-classrooms-that-employ-active-learning-strategies/ )
