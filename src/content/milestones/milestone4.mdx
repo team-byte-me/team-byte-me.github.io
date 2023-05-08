@@ -19,20 +19,29 @@ import { YouTube } from "astro-embed";
 
 > As a first time user, I want to understand the affordances of each button on the page so that I can use the tool as intended.
 
-In The Design of Everyday Things, Norman suggests that a design should “make things visible, including the conceptual model of the system, the alternative actions, and the results of actions” (Norman 188). This user story is important to include because the buttons on the site play a key role in the users’ formation of a conceptual model. Norman also emphasizes that “as much as possible, it should operate without instructions or labels” (Norman 188). As a result, we should ensure that buttons are made in a way that does not immediately send the user to the documentation in order to find an explanation.
+When designing our prototype, we have taken special care to address what we felt were inadequate signifiers for accomplishing the task of creating and editing computational structures in Grafstate. We have done this by implementing the following design elements into our final prototype:
+- Visual Signifiers and Icons: Each button in the interface is accompanied by a visual cue or icon that provides a visual representation of its purpose. These icons are designed to be easily recognizable and associated with their corresponding actions. For example, a "plus" icon is used for adding a new terminal, “magnifying glass” icons for zooming, and a "play button" icon for running a terminal’s code. By utilizing familiar and universally understood icons, we ensure that the purpose of each button is immediately clear to the user.
+- Button Labeling: In addition to the visual cues, we have included clear and concise labels for each button. The labels are descriptive and use simple language that aligns with the expected action. For instance, instead of using technical terms or none at all, we use labels like "Run," "Back," or “Info” to clearly convey the function of the respective buttons. This approach eliminates ambiguity and helps users quickly grasp the intended purpose of each button (Susan Wiedenbeck 79).
+- Button Placement and Grouping: We have carefully considered the placement and grouping of buttons within the interface. Buttons with similar functions are grouped together and positioned in a logical sequence, following the natural flow of the user's workflow. For example, buttons related to adding a new terminal in an already existing window or editing a window’s text size are grouped together, while buttons not directly related to an individual window like the run button or tutorial button are placed in a separate header section. This logical arrangement helps users associate buttons with their relevant actions and reduces cognitive load when interacting with the tool.
+
 
 **Demo**
-<YouTube id="" />
+<YouTube id="https://www.youtube.com/watch?v=E6O8w-ov-8k" />
 
 
 #### User Story - Split Windows
 
 > As a user, I want to arrange my terminal and results windows to my preferred layout so that I can customize my experience to match my preferred workflow.
 
-This is a relevant user story because it provides the user with as much flexibility as possible while still defining a page structure. In Designing the User Interface, Shneiderman includes keeping users in control as part of the Eight Golden Rules of Interface Design, and explains that “experienced users strongly desire the sense that they are in charge of the interface and that the interface responds to their actions” (Shneiderman 72). Since the terminal and results pages are where users will simulate computational structures, enabling them to restructure the layout of these pages keeps them in control of the main interaction points in the interface.
+To address the user's ability to customize their experience by arranging terminal and results windows in their preferred layout, our solution focuses on providing a flexible interface with design elements that empower users to personalize their workflow effectively. We have done so utilizing the following design elements:
+- Drag-and-Drop Interface: Our prototype incorporates a drag-and-drop interface that allows users to easily rearrange the terminal and result windows according to their preferred layout. Users can click and hold on a tabs title bar, then drag it to the desired position, enabling them to organize their workspace efficiently.
+- Snap-to-Grid Functionality: To assist users in aligning and arranging the windows precisely, our prototype includes a snap-to-grid functionality. When users drag a window close to another, the windows automatically align with the grid, ensuring a neat and organized layout. This feature eliminates the need for manual adjustments, saving time and effort for the user.
+- Window Sizing Options: Our prototype provides users with various window sizing options to further enhance their customization capabilities. Users can easily resize terminal and result windows by clicking and dragging the window borders, allowing them to adjust the dimensions to fit their preferred workspace setup.
+- Window Docking: To offer users more flexibility in managing their windows, our prototype includes window docking functionality. Users can dock the terminal and results windows together, side by side or in a tabbed interface, depending on their preference. This feature enables users to switch between different views or focus on specific aspects of their workflow seamlessly.
+
 
 **Demo**
-<YouTube id="" />
+<YouTube id="https://youtu.be/fZPsXeEh8ak" />
 
 #### User Story - User Tour
 
@@ -40,10 +49,15 @@ This is a relevant user story because it provides the user with as much flexibil
 
 > As a user, I want to be walked through examples of how to use the site so that I can understand how to be productive in the application.
 
-This user story is important because it will encompass the main use case of the site. Since it is a tool for visualizing math, GrafState’s main feature is enabling users to code and run simulations. In Understanding the Roles and Uses of Web Tutorials, the authors studied users’ comments on why they use website tutorials, and concluded that “tutorials provide in-task help for users in the midst of performing a task that they don’t know how to complete” (306). If a user is struggling to complete the task of simulating a computational structure, providing a tutorial can help them to learn how to do so.
+Our solution focuses on creating a user tour that demonstrates how to create a computational structure in order to help address a user’s need for guided understanding. Our solution of a user tour serves as a step-by-step walkthrough, providing the user with clear instructions and visual examples to help them grasp the functionality and basic usage of the site effectively. We address accomplish this by implementing the following design elements:
+- Interactive Interface: The user tour incorporates an interactive interface that guides users through each step. It utilizes elements like overlays and highlighting to draw attention to specific areas and features of the application. By providing visual cues and clear instructions, the user tour ensures that users can easily follow along and understand the actions they need to take.
+- Interactive Examples and Simulations: To enhance the learning experience, the user tour incorporates interactive examples and simulations. Users are presented with a practical scenario where they can actively interact with the site to create and run a computational structure and see the results of their actions in real-time. This hands-on approach allows users to grasp the concepts more effectively and reinforces their understanding of how to be productive in the application.
+- Clear Explanations: Alongside the visual demonstrations, the user tour provides clear explanations and contextual help. Each step is accompanied by concise descriptions that outline the purpose and significance of the actions being performed.
+
 
 **Demo**
-<YouTube id="" />
+<YouTube id="https://www.youtube.com/watch?v=jc_j151mftY" />
+
 
 ## B. Testing Protocol
 
@@ -71,7 +85,7 @@ Our surveys incorporate some aspects of the System Usability Scale, an industry 
 ##### New Users:
 - We will split all new Grafstate users evenly into two groups. One group will interact with our prototype, while the other will interact with the current version of Grafstate. The group that has been assigned to use our prototype will be asked to complete the newly created user tour in its entirety. We will ask each participant to run two simulations of a commonly used computational structure, called a DFA. We will also ask them to keep a count of the number of times that they feel confused, disoriented, or are unable to find what they are looking for. After completing the tasks, participants will fill out one of the surveys below:
   - <a href="https://docs.google.com/forms/d/e/1FAIpQLSeujArYYzfxHxqTdV5Y8mmhmCWwENQhZMdNUQdBLntTyJl59w/viewform?usp=sf_link" target="_blank">Group 1: Our Prototype</a>
-  - <a href="https://docs.google.com/forms/d/e/1FAIpQLSeujArYYzfxHxqTdV5Y8mmhmCWwENQhZMdNUQdBLntTyJl59w/viewform?usp=sf_link" target="_blank">Group 2: Current Version of Grafstate</a>
+  - <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6HIo0i9KFqcLGO8uj-IoAYxmdChvmRrEjT0Mb_BNSsZllHQ/viewform?usp=sf_link" target="_blank">Group 2: Current Version of Grafstate</a>
 
 ##### Experienced Users:
 - Participants who are familiar with Grafstate (students who have completed the Theory of Computing) will be asked to run two DFA’s, and resize the windows to match their preferred workflow. After doing so, they will be asked to complete the survey below:
@@ -106,38 +120,21 @@ Since our participants can complete the entire process from home, there are no a
 ## D. Summary Video
 
 
-<YouTube id="https://www.youtube.com/watch?v=HRPa7JF7Ndc" />
+<YouTube id="https://www.youtube.com/watch?v=MQz76uZ6-co" />
 
 
-[Link to video](https://www.youtube.com/watch?v=HRPa7JF7Ndc)
+[Link to video](https://www.youtube.com/watch?v=MQz76uZ6-co)
 
 
 ## References
 * [Design of Everyday Things](https://search.ebscohost.com/login.aspx?direct=true&AuthType=ip,shib&db=nlebk&AN=658202&site=ehost-live&scope=site&custid=uga1)
 
+* [Innovative Ethics: Using Animated Videos When Soliciting Informed Consent of Young People for Online Surveys.](https://doi.org/10.1093/swr/svx004)
 
-* [Coblis - Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/)
+* [The Belmont Report: Ethical principles and guidelines for the protection of human subjects of research. ](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html#xinform)
 
+* [T Test](https://www.ncbi.nlm.nih.gov/books/NBK553048/)
 
-* [Understanding the Roles and Uses of Web Tutorials](https://ojs.aaai.org/index.php/ICWSM/article/view/14413/14262)
-
-
-* [Application of visual colors in dynamic web page design through affective cognition.](https://doi.org/10.1007/s11042-021-11732-z)
-
-
-* [The use of icons and labels in an end user application program: an empirical study of learning and retention.](https://www.tandfonline.com/doi/abs/10.1080/014492999119129)
+* [An Empirical Evaluation of the System Usability Scale](https://www.tandfonline.com/doi/epdf/10.1080/10447310802205776?needAccess=true&role=button)
 
 
-* [Modeling Fonts in Context: Font Prediction on Web Designs.](https://doi.org/10.1111/cgf.13576)
-
-
-* [Effects of App Icon Border Form and Interface Background Color Saturation on User Visual Experience and Search Performance.](https://doi.org/10.1155/2022/1166656)
-
-
-* [How color can affect emotion](https://pubmed.ncbi.nlm.nih.gov/28612080/)
-
-
-* [The performance of the K6 and K10 screening scales for psychological distress in the Australian National Survey of Mental Health and Well-Being.](https://pubmed.ncbi.nlm.nih.gov/32823741/)
-
-
-* [Study shows students learn more when taking part in classroom activities.](https://news.harvard.edu/gazette/story/2019/09/study-shows-that-students-learn-more-when-taking-part-in-classrooms-that-employ-active-learning-strategies/ )
