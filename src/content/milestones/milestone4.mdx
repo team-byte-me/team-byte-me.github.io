@@ -19,13 +19,29 @@ import { YouTube } from "astro-embed";
 
 > As a first time user, I want to understand the affordances of each button on the page so that I can use the tool as intended.
 
-In The Design of Everyday Things, Norman suggests that a design should “make things visible, including the conceptual model of the system, the alternative actions, and the results of actions” (Norman 188). This user story is important to include because the buttons on the site play a key role in the users’ formation of a conceptual model. Norman also emphasizes that “as much as possible, it should operate without instructions or labels” (Norman 188). As a result, we should ensure that buttons are made in a way that does not immediately send the user to the documentation in order to find an explanation.
+When designing our prototype, we have taken special care to address what we felt were inadequate signifiers for accomplishing the task of creating and editing computational structures in Grafstate. We have done this by implementing the following design elements into our final prototype:
+- Visual Signifiers and Icons: Each button in the interface is accompanied by a visual cue or icon that provides a visual representation of its purpose. These icons are designed to be easily recognizable and associated with their corresponding actions. For example, a "plus" icon is used for adding a new terminal, “magnifying glass” icons for zooming, and a "play button" icon for running a terminal’s code. By utilizing familiar and universally understood icons, we ensure that the purpose of each button is immediately clear to the user.
+- Button Labeling: In addition to the visual cues, we have included clear and concise labels for each button. The labels are descriptive and use simple language that aligns with the expected action. For instance, instead of using technical terms or none at all, we use labels like "Run," "Back," or “Info” to clearly convey the function of the respective buttons. This approach eliminates ambiguity and helps users quickly grasp the intended purpose of each button (Susan Wiedenbeck 79).
+- Button Placement and Grouping: We have carefully considered the placement and grouping of buttons within the interface. Buttons with similar functions are grouped together and positioned in a logical sequence, following the natural flow of the user's workflow. For example, buttons related to adding a new terminal in an already existing window or editing a window’s text size are grouped together, while buttons not directly related to an individual window like the run button or tutorial button are placed in a separate header section. This logical arrangement helps users associate buttons with their relevant actions and reduces cognitive load when interacting with the tool.
+
+
+**Demo**
+<YouTube id="https://www.youtube.com/watch?v=E6O8w-ov-8k" />
+
 
 #### User Story - Split Windows
 
 > As a user, I want to arrange my terminal and results windows to my preferred layout so that I can customize my experience to match my preferred workflow.
 
-This is a relevant user story because it provides the user with as much flexibility as possible while still defining a page structure. In Designing the User Interface, Shneiderman includes keeping users in control as part of the Eight Golden Rules of Interface Design, and explains that “experienced users strongly desire the sense that they are in charge of the interface and that the interface responds to their actions” (Shneiderman 72). Since the terminal and results pages are where users will simulate computational structures, enabling them to restructure the layout of these pages keeps them in control of the main interaction points in the interface.
+To address the user's ability to customize their experience by arranging terminal and results windows in their preferred layout, our solution focuses on providing a flexible interface with design elements that empower users to personalize their workflow effectively. We have done so utilizing the following design elements:
+- Drag-and-Drop Interface: Our prototype incorporates a drag-and-drop interface that allows users to easily rearrange the terminal and result windows according to their preferred layout. Users can click and hold on a tabs title bar, then drag it to the desired position, enabling them to organize their workspace efficiently.
+- Snap-to-Grid Functionality: To assist users in aligning and arranging the windows precisely, our prototype includes a snap-to-grid functionality. When users drag a window close to another, the windows automatically align with the grid, ensuring a neat and organized layout. This feature eliminates the need for manual adjustments, saving time and effort for the user.
+- Window Sizing Options: Our prototype provides users with various window sizing options to further enhance their customization capabilities. Users can easily resize terminal and result windows by clicking and dragging the window borders, allowing them to adjust the dimensions to fit their preferred workspace setup.
+- Window Docking: To offer users more flexibility in managing their windows, our prototype includes window docking functionality. Users can dock the terminal and results windows together, side by side or in a tabbed interface, depending on their preference. This feature enables users to switch between different views or focus on specific aspects of their workflow seamlessly.
+
+
+**Demo**
+<YouTube id="https://youtu.be/fZPsXeEh8ak" />
 
 #### User Story - User Tour
 
@@ -33,76 +49,92 @@ This is a relevant user story because it provides the user with as much flexibil
 
 > As a user, I want to be walked through examples of how to use the site so that I can understand how to be productive in the application.
 
-This user story is important because it will encompass the main use case of the site. Since it is a tool for visualizing math, GrafState’s main feature is enabling users to code and run simulations. In Understanding the Roles and Uses of Web Tutorials, the authors studied users’ comments on why they use website tutorials, and concluded that “tutorials provide in-task help for users in the midst of performing a task that they don’t know how to complete” (306). If a user is struggling to complete the task of simulating a computational structure, providing a tutorial can help them to learn how to do so.
+Our solution focuses on creating a user tour that demonstrates how to create a computational structure in order to help address a user’s need for guided understanding. Our solution of a user tour serves as a step-by-step walkthrough, providing the user with clear instructions and visual examples to help them grasp the functionality and basic usage of the site effectively. We address accomplish this by implementing the following design elements:
+- Interactive Interface: The user tour incorporates an interactive interface that guides users through each step. It utilizes elements like overlays and highlighting to draw attention to specific areas and features of the application. By providing visual cues and clear instructions, the user tour ensures that users can easily follow along and understand the actions they need to take.
+- Interactive Examples and Simulations: To enhance the learning experience, the user tour incorporates interactive examples and simulations. Users are presented with a practical scenario where they can actively interact with the site to create and run a computational structure and see the results of their actions in real-time. This hands-on approach allows users to grasp the concepts more effectively and reinforces their understanding of how to be productive in the application.
+- Clear Explanations: Alongside the visual demonstrations, the user tour provides clear explanations and contextual help. Each step is accompanied by concise descriptions that outline the purpose and significance of the actions being performed.
+
+
+**Demo**
+<YouTube id="https://www.youtube.com/watch?v=jc_j151mftY" />
 
 
 ## B. Testing Protocol
 
-### 1. Protocol Description:
+### 1. Protocol Description
 
-**Research Question**: Does the user tour along with the updated signifiers enable new users to understand how the site works more effectively, and does the new window-like layout give experienced users more control over the interface?
+**Research Question:** Does the user tour along with the updated signifiers enable new users to understand how the site works more effectively, and does the new window-like layout give experienced users more control over the interface?
 
-**Objectives, Methodology, and Organization:**: 
-- We will use a mixed methodology involving surveys, observations, and interviews. Since our participants will have different levels of experience, it is necessary to adjust our approach to study each group effectively. The two major groups of participants include students who are already familiar with Grafstate, and students who have completed two computer science courses that include a programming component but have not yet taken a course that uses Grafstate. Changing the appearance of an interface has different effects on experienced users as compared to new users. Therefore, we will use the methodology that is best suited for each group. 
-- The students who have not used Grafstate will be split into two groups: one group will test the current interface, while the other will test our prototype. We will ask the participants to perform some basic tasks on the site that involve interacting with its most critical features. After observing how the user interacts with the site, we will ask them about their overall experience in an interview to verify that what we were observing is an accurate interpretation.
-- Directly observing experienced users is not necessary because their experience with the interface will be more subjective, and therefore difficult to interpret through observation. They have used the current version of Grafstate extensively, and our goal is to provide them with more control over the interface. We can send them the prototype, have them perform some basic tasks, and report their impressions in a survey. We can then analyze the surveys to determine whether the new layout was successful in keeping the user in control of the user interface more effectively than the current version of Grafstate.
+**Objectives, Methodology, and Organization:** 
+- We will use a mixed methodology involving surveys, observations, and interviews. Since our participants will have different levels of experience, it is necessary to adjust our approach to study each group effectively. The two major groups of participants include students who are already familiar with Grafstate, and students who have completed two computer science courses that include a programming component but have not yet taken a course that uses Grafstate. Changing the appearance of an interface has different effects on experienced users as compared to new users. Therefore, we will use the methodology that is best suited for each group.
+- Participants will be split into three groups. One will consist of students who are already familiar with Grafstate, while the other two include students who are not familiar with Grafstate but have completed two computer science courses with a programming component. Changing the appearance of an interface has different effects on experienced users as compared to new users. Therefore, these two groups will receive different surveys. Questions for experienced users will examine how much control the user feels that they have over the interface, while questions for new users are concerned with learning how to use the site.
+- The participants who have not used Grafstate will be split into two groups. One group will test the current interface, while the other will test our prototype. We will ask the participants to perform tasks on the site that are related to our problem of study. After completing each task, the participant will be asked to fill out the survey. Both groups will answer the same questions, since we will compare their responses directly. 
+- Experienced users have used the current version of Grafstate extensively, and our goal is to provide them with more control over the interface. We will send them the prototype, ask them to interact with the window-like layout, and report their impressions in a survey. This survey will help us determine whether the new layout keeps the user in control of the interface more effectively than the current version of Grafstate.
 
 
-### 1. Procedure Description:
+### 2. Procedure Description:
 
 #### Informed Consent:
-- Before testing our prototype, we will ensure that we obtain informed consent from all of our participants by considering the recommendations from the Belmont Report. In the report, it is stated that the “consent process can be analyzed as containing three elements: information, comprehension and voluntariness.” When informing each participant of the observational study, we will tell them exactly what data the observer is collecting, the reason for the study, and emphasize that they can withdraw from the study at any time. Since knowledge of these factors are not likely to impair the results of the study, each step of the procedure outlined below will be presented to the participant.
+- Before testing our prototype, we will ensure that we obtain informed consent from all of our participants by considering the recommendations from the Belmont Report. In the report, it is stated that the “consent process can be analyzed as containing three elements: information, comprehension and voluntariness.” We will give the potential research participants an informed consent form that will inform the participant of the purpose, expected duration/time, and procedures of our survey, as well as information on the participant’s rights to decline participating in the survey, the participant’s rights to withdraw from the survey, the potential risks to the participants, the benefits of the study, the participant’s confidential rights, and our contact information. Each step of our procedure that is outlined below will be presented to the participant on the informed consent form, as we do not believe information about the procedure given to the participant will impact our survey results.
 - To ensure that the participant has comprehended the information, we will pre-record a video that outlines all pertinent information for each group of participants. Experienced Grafstate users, who will not be directly observed during the study, will be given our contact information so that we can answer any additional questions they may have. New Grafstate users will also view a video before the observational study begins, the person conducting the interview will answer any questions before the study begins.
-
+- To ensure that we can get enough volunteers for the study, we will send an email to students in the School of Computing at UGA, asking them if they are interested in participating in our study, as well as providing the informed consent. In addition to this, we will ask Bill Hollingsworth encourage his students to participate in the study at the end of the academic semester, as those students will be experienced Grafstate users. We will also ask other professors in the CS department to encourage their students who are new Grafstate users to participate in our study.
 #### The Procedure:
 
+Our surveys incorporate some aspects of the System Usability Scale, an industry standard scale for gauging usability. In An Empirical Evaluation of the System Usability Scale, the authors report that the scale was developed to “allow the usability practitioner to quickly and easily assess the usability of a given product or service” (Bangor, 574). Our surveys contain variations of the recommended questions. We made minor adjustments to the recommended questions to address each user story. Our questions are therefore tailored to the design changes we recommended and our application, Grafstate, with the assessment ability from the SUS. 
+
 ##### New Users:
-- Participants who have not used Grafstate before will be asked to run two simulations of a commonly used computational structure, called a DFA. The group that has been assigned to use our prototype will be asked to complete the user tour in its entirety, while the other group will interact directly with the current version of Grafstate. Both groups will be asked to try to figure out how to run a simulation quickly, but at a pace at which they will be able to remember the steps.
-- As the participants navigate the site, the observer will measure the total amount of time it takes for them to complete the task, as well as the number of times that the user seems disoriented or confused by the interface. Following the observational study, the interviewer will ask the participant to rate how confident they are in their ability to remember how to perform the task again with one of the following options: Very confident, somewhat confident, slightly unconfident, very unconfident. The interviewer will also ask the participant to rate their overall experience with the site with one of the following options: Excellent, good, average, needs improvement, terrible. The interview can use an industry standard scale for gauging usability, the System Usability Scale, which works with small sample sizes. Incorporating this scale into our survey for how users feel about the new interface of GrafState will allow us to have feedback for the most critical aspects of the design changes because a metric will be produced for questions such as “​​I needed to learn a lot of things before I could get going with this system,” “I felt very confident using the system,” and “I found the system very cumbersome to use.”
-- We will organize the data collected above in excel. We will calculate the average number of instances of confusion for both groups, as well as the average amount of time that it takes for the user to complete the task. The ratings will be compared between the two groups on bar graphs. One graph will display the confidence related to performing the tasks again, while the other will compare the overall experience.
+- We will split all new Grafstate users evenly into two groups. One group will interact with our prototype, while the other will interact with the current version of Grafstate. The group that has been assigned to use our prototype will be asked to complete the newly created user tour in its entirety. We will ask each participant to run two simulations of a commonly used computational structure, called a DFA. We will also ask them to keep a count of the number of times that they feel confused, disoriented, or are unable to find what they are looking for. After completing the tasks, participants will fill out one of the surveys below:
+  - <a href="https://docs.google.com/forms/d/e/1FAIpQLSeujArYYzfxHxqTdV5Y8mmhmCWwENQhZMdNUQdBLntTyJl59w/viewform?usp=sf_link" target="_blank">Group 1: Our Prototype</a>
+  - <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6HIo0i9KFqcLGO8uj-IoAYxmdChvmRrEjT0Mb_BNSsZllHQ/viewform?usp=sf_link" target="_blank">Group 2: Current Version of Grafstate</a>
 
 ##### Experienced Users:
-- Participants who are familiar with Grafstate will be asked to run two DFA’s, and resize the windows to match their preferred workflows. In the survey, we will ask them to answer the following questions:
-- The prototype gives you more control over the interface.
-- It was easy to learn how to use the prototype. 
-- The prototype is an improvement on the current version of Grafstate.  
-- The answer choices will be: Strongly agree, somewhat agree, neutral, somewhat disagree, strongly disagree.
+- Participants who are familiar with Grafstate (students who have completed the Theory of Computing) will be asked to run two DFA’s, and resize the windows to match their preferred workflow. After doing so, they will be asked to complete the survey below:
+  - <a href="https://docs.google.com/forms/d/e/1FAIpQLSfb0lgXqJ0n30HyFSPUSTtVnmOusx0iL1B_naYtehYA4RYLjg/viewform?usp=sf_link" target="_blank">Experienced User Survey</a>
+ 
+#### Organization & Analysis
+We will use Google Forms to create and distribute the surveys. Responses will be organized using the graphs that Google Forms provides. Below is an example of the graphs we will use for further analysis.
+![Graph for Survey Results](/graph.png)
+
+For experienced users, the more responses that agree with the statements in the survey, the more confidently we can conclude that the window-like layout helps to keep users in control.
+
+For new users, we will compare the percentages of responses between both groups using the graphs like the one above. We will also compare the average number of instances of confusion. To determine whether there is a consistent and pronounced difference between the responses from the two groups in favor of our prototype, we will perform a one-tailed t-test. 
+
+According to an article on the topic of t-tests from the National Library of Medicine, “While the one-sample t-test allows you to test the statistic of a single set of numbers against a specific numeric value, the two-sample t-test allows testing the values of a statistic between two groups” (Wadhwa, 4). Since we are comparing the results between two groups for new users, we will perform a two sample t-test. For the experienced user group, a one sample t-test will be performed to determine whether the statistical difference is significant. We will use random and independent samples and assume nearly normal conditions. 
+
+The responses to each question will be mapped to three buckets before performing the t-test. Bucket 1 combines strongly agree and agree, bucket 2 is neutral, and bucket 3 is for disagree and strongly disagree.
+
+#### T-Test for New Users:
+Responses for the instances of confusion will also be split into three buckets. Bucket one for 0 instances, bucket two for 1 to 3 instances, and bucket three for 4 or more instances. Our alternative hypothesis is that participants using our prototype will fall under buckets 1 and 2 more than those using the current version of Grafstate.
+
+For the questions in the survey, our alternative hypothesis is that more participants using our prototype will fall under bucket 1 than those using the current version of Grafstate.
+
+#### T-Test for Experienced Users:
+The goal for this t-test is to determine whether there is a statistically significant difference between positive and negative responses to the questions in the survey. Responses will be split into 3 buckets, exactly like the t-test for new users. Our alternative hypothesis is that the majority of responses will fall under bucket 1.
+
+#### Overview of How to Perform the T-Test:
+We will use prior knowledge from statistics courses to perform the test. The steps include formulating a null and alternative hypothesis, determining a critical value, calculating the test statistic, and checking whether the absolute value of the test statistic is greater than the critical value. If this is the case, then we reject the null hypothesis. We must then ensure that the statistical significant difference is in favor of our prototype.
+
+#### Pandemic Procedure
+Since our participants can complete the entire process from home, there are no additional precautions that need to be taken to make this study safe during a pandemic. That being said, since we will not be interacting with our participants in person, it is very important to provide them with contact information so that they can ask us any additional questions.
 
 ## D. Summary Video
 
 
-<YouTube id="https://www.youtube.com/watch?v=HRPa7JF7Ndc" />
+<YouTube id="https://www.youtube.com/watch?v=MQz76uZ6-co" />
 
 
-[Link to video](https://www.youtube.com/watch?v=HRPa7JF7Ndc)
+[Link to video](https://www.youtube.com/watch?v=MQz76uZ6-co)
 
 
 ## References
 * [Design of Everyday Things](https://search.ebscohost.com/login.aspx?direct=true&AuthType=ip,shib&db=nlebk&AN=658202&site=ehost-live&scope=site&custid=uga1)
 
+* [Innovative Ethics: Using Animated Videos When Soliciting Informed Consent of Young People for Online Surveys.](https://doi.org/10.1093/swr/svx004)
 
-* [Coblis - Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/)
+* [The Belmont Report: Ethical principles and guidelines for the protection of human subjects of research. ](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html#xinform)
 
+* [T Test](https://www.ncbi.nlm.nih.gov/books/NBK553048/)
 
-* [Understanding the Roles and Uses of Web Tutorials](https://ojs.aaai.org/index.php/ICWSM/article/view/14413/14262)
-
-
-* [Application of visual colors in dynamic web page design through affective cognition.](https://doi.org/10.1007/s11042-021-11732-z)
-
-
-* [The use of icons and labels in an end user application program: an empirical study of learning and retention.](https://www.tandfonline.com/doi/abs/10.1080/014492999119129)
+* [An Empirical Evaluation of the System Usability Scale](https://www.tandfonline.com/doi/epdf/10.1080/10447310802205776?needAccess=true&role=button)
 
 
-* [Modeling Fonts in Context: Font Prediction on Web Designs.](https://doi.org/10.1111/cgf.13576)
-
-
-* [Effects of App Icon Border Form and Interface Background Color Saturation on User Visual Experience and Search Performance.](https://doi.org/10.1155/2022/1166656)
-
-
-* [How color can affect emotion](https://pubmed.ncbi.nlm.nih.gov/28612080/)
-
-
-* [The performance of the K6 and K10 screening scales for psychological distress in the Australian National Survey of Mental Health and Well-Being.](https://pubmed.ncbi.nlm.nih.gov/32823741/)
-
-
-* [Study shows students learn more when taking part in classroom activities.](https://news.harvard.edu/gazette/story/2019/09/study-shows-that-students-learn-more-when-taking-part-in-classrooms-that-employ-active-learning-strategies/ )
